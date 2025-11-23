@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative;
+}
+
+.menu {
+
+  height: 100dvh;
+  width: 100px;
+  background-color: rgb(70, 68, 68);
+  position: absolute;
+  top: 0;
+  left: -100px;
+  transition: left .5s ease-in-out;
+
+
+
+
+
+}
+
+
+li {
+  list-style: none;
+
+}
+
+a {
+  text-decoration: none;
+  color: rgb(35, 1, 1);
+}
+
+.btn {
+  padding: 10px 15px;
+  border: none;
+  color: red;
+  border-radius: 5px;
+
+}
