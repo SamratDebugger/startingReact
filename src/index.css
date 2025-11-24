@@ -18,7 +18,7 @@
   background-color: rgb(70, 68, 68);
   position: absolute;
   top: 0;
-  left: -100px;
+
   transition: left .5s ease-in-out;
 
 
@@ -44,4 +44,12 @@ a {
   color: red;
   border-radius: 5px;
 
+}
+
+.left-0 {
+  left: 0;
+}
+
+.left-100 {
+  left: -100px;
 }
