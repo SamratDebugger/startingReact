@@ -53,3 +53,7 @@ a {
 .left-100 {
   left: -100px;
 }
+
+.bgRed {
+  background-color: red;
+}
