@@ -57,3 +57,11 @@ a {
 .bgRed {
   background-color: red;
 }
+
+.cards{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-inline:10px ;
+}
