@@ -1,16 +1,22 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Card from "./components/Card";
 import Header from "./components/Header";
 
 function App() {
   // set useState
   const [cardData, setCardData] = useState(null);
+
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/posts")
+      .then((response) => response.json())
+      .then((data) => setCardData(data));
+  }, []);
   return (
     <>
       <Header />
       <section className="cards">
-        {Array.from({ length: 5 }).map((_, i) => (
-          <Card key={i} />
+        {cardData?.map((cardInfo) => (
+          <Card cardInfo={cardInfo} key={cardInfo.id} />
         ))}
       </section>
     </>
